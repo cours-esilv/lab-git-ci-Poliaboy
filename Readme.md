@@ -220,3 +220,5 @@ Créez une branche `feature/test-build` à partir de la branch develop et consta
 Vous pouvez maintenant créer plusieurs branches features et vous apercevoir que ces branches se verront appliquée les étapes de build, test et package.
 
 Toute cette configuration permet d'avoir un système de validation au plus près sans perdre de temps sur les feedback rapides attendus pour améliorer la qualité des produits.
+
+sample
