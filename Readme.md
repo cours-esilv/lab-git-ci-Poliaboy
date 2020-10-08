@@ -221,4 +221,4 @@ Vous pouvez maintenant créer plusieurs branches features et vous apercevoir que
 
 Toute cette configuration permet d'avoir un système de validation au plus près sans perdre de temps sur les feedback rapides attendus pour améliorer la qualité des produits.
 
-simple
+sample
