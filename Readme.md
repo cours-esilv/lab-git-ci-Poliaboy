@@ -252,8 +252,6 @@ Votre pipeline est maintenant prêt à exécuter les étapes définies en son se
 
 Créez une branche `feature/test-build` à partir de la branch develop et constatez que le build est automatiquement appliqué sur cette branche.
 
-![multibranch pipeline](docs/images/multibranch-pipeline.png)
-
 ### 2.6 : Conclusion
 Vous pouvez maintenant créer plusieurs branches features et vous apercevoir que ces branches se verront appliquée les étapes de build, test et package.
 
