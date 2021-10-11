@@ -116,7 +116,6 @@ Dans cette seconde partie, vous devez utiliser le même repo que celui obtenu à
 
 > Pour réaliser l'ensemble des étapes demandées dans cette partie, vous vous placerez sur la branche `develop`
 
----
 Le but de cette seconde partie de TP est d'implémenter un pipeline CI (intégration continue) permettant d'automatiser:
 * le téléchargement des dépendances utiles au build applicatif
 * le build de l'application 
@@ -133,7 +132,6 @@ Pour avoir un aperçu des fonctionnalités de GitHub Actions, [voir la page offi
 Pour plus de documentation sur la syntaxe des fichier YAML, [voir la documentation officielle](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions)
 
 > **Important**: La documentation ci-dessus sera indispensable pour pouvoir mener à bien ce TP et les suivants.
----
 
 ### 2.1 : Création de votre premier Pipeline - Build & Test
 Dans la page d'accueil de votre repository (sur GitHub), allez dans le menu `Actions` et cliquez sur `set up a workflow yourself`.
