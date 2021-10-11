@@ -32,13 +32,11 @@ Commande | Description
 * Classroom
 * Issue
 
-### Azure DevOps
-* Service SaaS - [dev.azure.com](https://dev.azure.com)
+### Github actions
+* Service SaaS - [github.com/features/actions](https://github.com/features/actions)
 * Pipeline: CI vs CD
 * Pipeline: Configuration as code
 
----
----
 ---
 
 ## 1 : Git 
@@ -47,7 +45,7 @@ Commande | Description
 Allez sur [Github](https://github.com/) et se créer un compte si ce n'est pas déjà la cas.
 
 ### 1.1 : Accepter l'assignment 
-Suivez le lien présent au tableau ou dans le channel de votre groupe Discord pour récupérer une copie personnelle de ce repository dans l'organisation GitHub Classroom `cours-ece`.
+Suivez le lien présent au tableau ou dans le channel de votre groupe Discord pour récupérer une copie personnelle de ce repository dans l'organisation GitHub Classroom `devops-cloud-courses`.
 
 ### 1.2 : Cloner le repository
 Clonez le repo nouvellement copié sur votre ordinateur 
@@ -109,8 +107,6 @@ Lister les branches présentes dans le repo. Au sens Gitflow, à quoi servent ce
 
 > ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.10` ayant pour contenu la description des branches existantes dans la méthodologie Gitflow qui sont présentes dans votre repository. (ex: la branche master sert à ...)
 
----
----
 ---
 
 ## 2 : CI/CD avec GitHub Actions
