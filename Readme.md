@@ -22,8 +22,9 @@ Commande | Description
 `git branch` | Créer une nouvelle branch locale
 `git merge` | Appliquer les changements d'une branche sur une autre branche localement
 
-### Gitflow
-![Gitflow diagram](https://backlog.com/app/themes/backlog-child/assets/img/guides/git/collaboration/branching_workflows_001.png)
+### GitHub flow
+[GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+![GitHub flow diagram](https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2021/12/Github-flow-with-GitHub-actions-7803961-8145433.jpg?ssl=1)
 
 ### Pull request
 ![Pull request diagram](https://miro.medium.com/max/600/1*ubVyD2GaOAlSfqRNbL0Bjg.png)
@@ -78,49 +79,51 @@ Listez **toutes** les branches présentes dans le repository.
 Est-ce que toutes les branches vous paraissents normales ? Y a t-il une branche qui retient votre attention ? 
 Si oui, déplacez vous dessus (checkout).
 
-> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.6` ayant pour contenu la commande que vous avez effectué pour afficher les branches présentes dans votre repo et le nom de la branche qui a retenu votre attention.
+> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.6` ayant pour contenu la commande que vous avez effectué pour afficher les branches présentes dans votre repo.
 
-### 1.7 : Créez une branche
-Créez une branche à partir de la branche trouvée dans la question précédente. La branche à créer doit s'appeler `feature/` suivi de la première lettre de votre prénom puis du nom de famille en minuscule (pas d'espace ni d'accent dans le nom).
+### 1.7 : Mergez la branche
+Maintenant que vous avez fait un tour sur la branche qui a retenue votre attention, rappatriez les changements présents sur cette dernière sur votre branche principale (snape -> main). Puis, supprimez la branch `snape` localement.
+
+> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.7.1` ayant pour contenu la commande que vous avez effectué pour merger la branche `snape` dans la branche `main`.
+
+> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.7.2` ayant pour contenu la commande que vous avez effectué pour supprimer la branche `snape` (après avoir mergé les changements sur `main`).
+
+### 1.8 : Créez une branche
+Maintenant que vous n'avez plus qu'une branche `main` dans votre repo, créez une branche à partir de `main`. La branche à créer doit s'appeler `feature/` suivi de la première lettre de votre prénom puis du nom de famille en minuscule (pas d'espace ni d'accent dans le nom).
 
 > Ex Albus Dumbledore --> feature/adumbledore
 
 Puis, placez vous sur votre branche `feature/{nom}` nouvellement créée.
 
-> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.7` ayant pour contenu les commandes que vous avez effectué pour créer et vous déplacez sur la nouvelle branche.
+> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.8` ayant pour contenu les commandes que vous avez effectué pour créer et vous déplacez sur la nouvelle branche.
 
-### 1.8 : Ah, c'est la que tu aurais aimé suivre le dernier cours ...
-Répondez aux questions contenues dans le fichier questions.md, puis committez les changements sur la branche `feature/{nom}`.
+### 1.9 : Ah, c'est la que tu aurais aimé suivre le dernier cours :trollface:
+Répondez aux questions contenues dans le fichier `questions.md`, puis committez les changements sur la branche `feature/{nom}`.
 Enfin, pushez tous vos changements présents réalisés sur toutes les branches sur votre repository GitHub.
 
-> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.8` ayant pour contenu les commande que vous avez effectué pour pusher toutes les branches sur votre repo GitHub.
+> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.9` ayant pour contenu les commande que vous avez effectué pour pusher toutes les branches sur votre repo GitHub.
 
-### 1.9 : Pull request time !!
+### 1.10 : Pull request time !!
 Dans l'interface web GitHub, ouvrez une pull request partant de votre branche `feature/{nom}` pointant sur la branche develop de votre repository.
 
-> **Warning**: Pensez bien à nous ajouter (laurent et arthur) en tant que reviewer de votre pull request afin que je puisse vous corriger.
+> **Warning**: Pensez bien à m'ajouter (arthur) en tant que reviewer de votre pull request afin que je puisse vous corriger.
 
 Pour plus d'aide sur les pull requests voir la [documentation officielle](https://help.github.com/articles/about-pull-requests/)
-
-### 1.10 : Gitflow
-Lister les branches présentes dans le repo. Au sens Gitflow, à quoi servent ces chacunes de ces branches ?
-
-> ⚠️  **ANSWER**: Créez un fichier s'intitulant `1.10` ayant pour contenu la description des branches existantes dans la méthodologie Gitflow qui sont présentes dans votre repository. (ex: la branche master sert à ...)
 
 ---
 
 ## 2 : CI/CD avec GitHub Actions
-Dans cette seconde partie, vous devez utiliser le même repo que celui obtenu à la fin de la partie 1.
+Dans cette seconde partie, vous devez utiliser le même repo que celui obtenu à la fin de la partie 1, en vous plaçant sur la branche `main` de votre repo.
 
 > ⚠️  **WARNING**: Chacunes des questions demandant une modification de code nécessite au minimum un commit et un push dans votre repository. Le découpage des commits est pris en compte dans la notation.
 
-> Pour réaliser l'ensemble des étapes demandées dans cette partie, vous vous placerez sur la branche `develop`
+> Pour réaliser l'ensemble des étapes demandées dans cette partie, vous vous placerez sur la branche `main`
 
 Le but de cette seconde partie de TP est d'implémenter un pipeline CI (intégration continue) permettant d'automatiser:
 * le téléchargement des dépendances utiles au build applicatif
 * le build de l'application 
 * les tests de l'application et leur mise à disposition dans une UI utilisable par n'importe qui
-* le package de l'application à l'aide de Docker - sans pression, je vous donne tout pour la partie Docker pour l'instant
+* le package de l'application à l'aide de Docker - sans pression, je vous donne tout pour la partie Docker pour l'instant :ok_hand:
 
 Pour cela, nous allons utiliser une solution SaaS intégrée à GitHub appelée **GitHub Actions**.
 
@@ -232,14 +235,11 @@ Puis, modifiez le fichier `.github/workflows/main.yml` pour y ajouter les étape
 Commitez vos changements une dernière fois et observez le build de l'image Docker via les logs.
 
 ### 2.6 : Mise en place de la gestion multi-branche
-Pour l'instant votre pipeline ne se déclanche que sur la branche `develop` (cf. trigger).
+Pour l'instant votre pipeline ne se déclanche que sur la branche `main` (cf. trigger).
 
 Modifiez la valeur du trigger afin de lancer le pipeline sur toutes les branches de type:
-* master
-* develop
-* feature (attention, regarder la nomenclature gitflow)
-
-Après avoir réalisé ces changements, mergez tous vos changements proprement jusqu'à master
+* main
+* feature (commençant par le mot feature/...)
 
 ### 2.6 : Création d'une nouvelle branche
 Votre pipeline est maintenant prêt à exécuter les étapes définies en son sein quelles que soient les branches qui soient créées. 
