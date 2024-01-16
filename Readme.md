@@ -46,7 +46,7 @@ Commande | Description
 Allez sur [Github](https://github.com/) et se créer un compte si ce n'est pas déjà la cas.
 
 ### 1.1 : Accepter l'assignment 
-Suivez le lien présent au tableau ou dans le channel de votre groupe Discord pour récupérer une copie personnelle de ce repository dans l'organisation GitHub Classroom `devops-cloud-courses`.
+Suivez le lien présent au tableau ou dans le channel de Teams pour récupérer une copie personnelle de ce repository dans l'organisation GitHub Classroom `cours-esilv`.
 
 ### 1.2 : Cloner le repository
 Clonez le repo nouvellement copié sur votre ordinateur 
@@ -106,7 +106,7 @@ Enfin, pushez tous vos changements présents réalisés sur toutes les branches 
 ### 1.10 : Pull request time !!
 Dans l'interface web GitHub, ouvrez une pull request partant de votre branche `feature/{nom}` pointant sur la branche develop de votre repository.
 
-> **Warning**: Pensez bien à m'ajouter (arthur) en tant que reviewer de votre pull request afin que je puisse vous corriger.
+> **Warning**: Pensez bien à m'ajouter (laurentgrangeau) en tant que reviewer de votre pull request afin que je puisse vous corriger.
 
 Pour plus d'aide sur les pull requests voir la [documentation officielle](https://help.github.com/articles/about-pull-requests/)
 
