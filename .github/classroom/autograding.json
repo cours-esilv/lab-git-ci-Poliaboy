@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "1.3",
+      "setup": "",
+      "run": "grep -q -E 'git.*add' answers/1.3 && grep -q -E 'git.*commit' answers/1.3 && grep -q -E 'git.*push' answers/1.3",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.4",
+      "setup": "",
+      "run": "grep -q -E 'git.*log' answers/1.4",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.5",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*log.*grep.*ginny' answers/1.5",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.6",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*branch.*-a' answers/1.6",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.7.1",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*merge.*snape' answers/1.7.1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.7.2",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*branch.*-d.*snape' answers/1.7.2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.8",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*checkout.*-b.*feature|git.*branch.*feature' answers/1.8",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "1.9",
+      "setup": "",
+      "run": "grep -q -i -E 'git.*push.*--all' answers/1.9",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
