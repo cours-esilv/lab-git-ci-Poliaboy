@@ -1,1 +1,10 @@
+      # Installe java 8 sur l'agent
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
 
+      # Compile notre application
+      - name: Build with Maven
+        run: mvn --batch-mode --update-snapshots package
